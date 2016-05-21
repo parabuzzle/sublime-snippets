@@ -1,0 +1,6 @@
+<snippet>
+  <content><![CDATA[tap{ |obj| binding.pry; self }]]></content>
+  <tabTrigger>pry</tabTrigger>
+  <scope>source.ruby</scope>
+  <description>Ruby: Pry Binding</description>
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+var ${1:React} = require('${2:react}');
+]]></content>
+  <tabTrigger>rrr</tabTrigger>
+  <scope>source.js</scope>
+  <description>React: Require declaration</description>
+</snippet>
