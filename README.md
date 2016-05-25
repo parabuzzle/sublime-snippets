@@ -26,11 +26,11 @@ Alternatively you can just put the ones you want in `~/Library/Application Suppo
 
 |Tab Trigger|Description|
 |-----------|-----------|
-|`sservice` | Scaffold a Service Class |
-|`sentity`  | Scaffold an Entity |
-|`snullentity`| Scaffold a NullEntity
-|`slistscope` | Scaffold a ListScope |
-|`srequest` | Scaffold a Request |
+|`shamuservice` | Scaffold a Service Class |
+|`shamuentity`  | Scaffold an Entity |
+|`shamunullentity`| Scaffold a NullEntity
+|`shamulistscope` | Scaffold a ListScope |
+|`shamurequest` | Scaffold a Request |
 
 ### React(babel)
 

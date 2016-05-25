@@ -6,7 +6,7 @@ module ${1:Namespace}
   end
 end
 ]]></content>
-  <tabTrigger>snullentity</tabTrigger>
+  <tabTrigger>shamunullentity</tabTrigger>
   <scope>source.ruby</scope>
   <description>Shamu: Null Entity Scaffold</description>
 </snippet>

@@ -7,7 +7,7 @@ module ${1:Namespace}
 end
 
 ]]></content>
-  <tabTrigger>slistscope</tabTrigger>
+  <tabTrigger>shamulistscope</tabTrigger>
   <scope>source.ruby</scope>
   <description>Shamu: List Scope Scaffold</description>
 </snippet>

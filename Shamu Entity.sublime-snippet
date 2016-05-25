@@ -11,7 +11,7 @@ module ${1:Namespace}
 end
 
 ]]></content>
-  <tabTrigger>sentity</tabTrigger>
+  <tabTrigger>shamuentity</tabTrigger>
   <scope>source.ruby</scope>
   <description>Shamu: Entity Scaffold</description>
 </snippet>

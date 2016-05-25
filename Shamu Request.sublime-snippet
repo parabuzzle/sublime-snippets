@@ -16,7 +16,7 @@ module ${1:Namespace}
   end
 end
 ]]></content>
-  <tabTrigger>srequest</tabTrigger>
+  <tabTrigger>shamurequest</tabTrigger>
   <scope>source.ruby</scope>
   <description>Shamu: Request Scaffold</description>
 </snippet>
