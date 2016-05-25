@@ -1,0 +1,12 @@
+<snippet>
+  <content><![CDATA[
+module ${1:Namespace}
+  class Null${2:Entity} < ${1}::${2}
+    include Shamu::Entities::NullEntity
+  end
+end
+]]></content>
+  <tabTrigger>snullentity</tabTrigger>
+  <scope>source.ruby</scope>
+  <description>Shamu: Null Entity Scaffold</description>
+</snippet>

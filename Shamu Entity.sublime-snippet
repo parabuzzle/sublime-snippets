@@ -1,0 +1,17 @@
+<snippet>
+  <content><![CDATA[
+module ${1:Namespace}
+  class ${2:Entity} < Shamu::Entities::Entity
+    model :record
+
+    attribute :id, on: :record
+    ${3}
+
+  end
+end
+
+]]></content>
+  <tabTrigger>sentity</tabTrigger>
+  <scope>source.ruby</scope>
+  <description>Shamu: Entity Scaffold</description>
+</snippet>

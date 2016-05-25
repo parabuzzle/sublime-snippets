@@ -1,0 +1,13 @@
+<snippet>
+  <content><![CDATA[
+module ${1:Namespace}
+  class ${2:ListScope} < Shamu::Entities::ListScope
+    attribute ${3:attribute}
+  end
+end
+
+]]></content>
+  <tabTrigger>slistscope</tabTrigger>
+  <scope>source.ruby</scope>
+  <description>Shamu: List Scope Scaffold</description>
+</snippet>

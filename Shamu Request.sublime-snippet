@@ -1,0 +1,22 @@
+<snippet>
+  <content><![CDATA[
+module ${1:Namespace}
+  module ${2:Request}
+    class Change < Shamu::Services::Request
+
+      attribute ${3:attribute}
+
+    end
+
+    class Create < ${2}::Change
+    end
+
+    class Update < ${2}::Change
+    end
+  end
+end
+]]></content>
+  <tabTrigger>srequest</tabTrigger>
+  <scope>source.ruby</scope>
+  <description>Shamu: Request Scaffold</description>
+</snippet>

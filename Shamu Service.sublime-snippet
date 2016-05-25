@@ -1,0 +1,55 @@
+<snippet>
+  <content><![CDATA[
+module ${1:Namespace}
+  class ${2:Service} < Shamu::Services::Service
+    include Shamu::Services::RequestSupport
+
+
+    def list( list_scope )
+      list_scope = ${1}::ListScope.coerce! list_scope
+      entity_list ${1}::Models::${3:Model}.by_list_scope( list_scope )
+    end
+
+    def lookup( *ids )
+      entity_lookup_list ${1}::Models::${3}.where( id: ids ), ids, ${1}::Null${5}
+    end
+
+    def find( id )
+      find_by_lookup( id )
+    end
+
+    def create( params )
+      with_request params, ${1}::${4:Request}::Create do |request|
+        next unless request.valid?
+        record = ${1}::Models::${3}.new
+        apply_changes(request, record)
+      end
+    end
+
+    def update( id, params )
+      with_request params, ${1}::${4}::Update do |request|
+        next unless request.valid?
+        record = ${1}::Models::${3}.find( id )
+        apply_changes(request, record)
+      end
+    end
+
+    private
+
+      def build_entity( record, records = nil )
+        scorpion.fetch ${5:Entity}, {record: record}, {}
+      end
+
+      def apply_changes(request, record)
+        request.apply_to record
+        return record unless record.save
+        build_entity( record )
+      end
+  end
+
+end
+]]></content>
+  <tabTrigger>sservice</tabTrigger>
+  <scope>source.ruby</scope>
+  <description>Shamu: Service Scaffold</description>
+</snippet>
